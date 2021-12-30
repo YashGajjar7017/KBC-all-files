@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="page1.css">
+    <title>KBM-A game </title>
+</head>
+
+<body>
+    <nav class="navbar background2 h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><a href="#"></a><img src="logo2.jpg" alt="logo"></div>
+            <li><a href="page1.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#production">Production</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login" class="login">login </a></li>
+            <li><a href="#logout" class="logout">logout</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" class="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big z1">KBC - Kon Baneja Crore pate</p>
+                <div class="button">
+                    <a href="page2.html">
+                        <button class="btn">PLAY</button>
+                    </a>
+                    <a href="level.html">
+                        <button class="btn">More Level</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    const audio = new Audio('Kbc entery Ringtone.mp3');
+    audio.play();
+    $('.document').ready(function(){
+        $('.logout').hide()
+        $('.login').click(function(){
+            $('.login').hide()
+            alert('Are you sure you want to play kbc with me ')
+            $('.logout').show();
+        });
+    });
+</script>
+<script src="main.js"></script>
+
+</html>

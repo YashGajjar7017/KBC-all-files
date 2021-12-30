@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* font-family: 'Pacifico', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 60%;
+    border: 2px solid white;
+    border-radius: 40px;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+   width: 60%;
+   /* background-color: black; */
+   display: flex;
+   align-items: center;
+   /* justify-content: center; */
+}
+.nav-list li{
+   list-style: none;
+   padding: 17px;
+   /* border: 1px solid white; */
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav-list li:hover{
+    color: white;
+    background-color: grey;
+}
+.rightNav{
+    /* background-color: aqua; */
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7)url('KBCLogo.png');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60%;
+}
+.background2{
+    background: rgba(0, 0, 0, 0.7)url('KBCLogo.png');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 100%;
+}
+.firstsection{
+    height: 100vh;
+}
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+}
+.secondHalf{
+  width: 30%;
+}
+.secondHalf img{
+    width: 140%;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    background-color: white;
+}
+.text-big{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 17px;
+}
+.text-small{
+    font-size: 15px;
+}
+.button{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left:20%;
+}
+.btn{
+    padding: 10px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.btn:hover{
+    background: none;
+    color: white;
+}
+.btn-sm{
+    padding: 7px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 180px;
+    width: 25%;
+}
+.btn-dark:hover{
+    background-color: black;
+    color: white;
+}
+.section{
+    /* height: 150%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Pacifico', cursive;
+}
+.section-Left{
+    flex-direction: row-reverse;
+    font-family: 'Pacifico', cursive;
+}
+
+.text-center{
+    text-align: center;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+.form{
+    max-width: 444px;
+    margin: 25px auto;
+}
+.form-input{
+    margin: 8px 0px;
+    width: 100%;
+    padding: 5px 3px;
+    font-size: 19px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-footer{
+    text-align: center;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.w2{
+    color: white;
+}
+.burger{
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+  display: none;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+.z1{
+    background-color: transparent;
+    color: yellowgreen;
+}
+
+@media only screen and (max-width:1100px)
+{
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.6s ease-out;
+        height: 477px;
+    }
+    .nav-list li a{
+        color: black;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 160%;
+        height: 97%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 65px;
+    }
+    .v-class-resp{
+        opacity: 0;
+        display: none;
+    }
+    .form{
+        max-width: 54%; 
+    }
+   .section{
+       flex-direction: column-reverse;
+   }
+   .text-big{
+       text-align: center;
+       margin-left: 15%;
+   }
+   .text-small{
+       text-align: center;
+       margin-left: 15%;
+   }
+   .button{
+       text-align: center;
+       margin-left: 17%;
+   }
+   .paras{
+       padding: 0px 7px;
+   }
+   .thumbnail img{
+       margin-top: 10%;
+    }  
+   .logo img {
+      width: 140%;
+   }   
+   .btn-dark{
+      align-items: center;
+      margin-left: 39%;
+   }
+   .secondHalf{
+      margin-right: 20%;
+      max-width: 100%;
+      margin-top: 20%;
+    } 
+    .background2{
+        background: peachpuff;
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+}
+   
